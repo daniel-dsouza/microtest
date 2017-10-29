@@ -1,7 +1,7 @@
 FROM golang:1.9.1
 
-WORKDIR /home/dadsouza/go/src/github.com/daniel-dsouza/microtest/api
-COPY api .
+WORKDIR /go/src/microtest/api
+COPY . .
 COPY pb ../pb
 
 RUN go get -v ./...
